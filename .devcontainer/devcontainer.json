@@ -1,0 +1,18 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"version": "3.10"
+		},
+		"ghcr.io/devcontainers-contrib/features/pipenv:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/pylint:2": {
+			"version": "latest"
+		},
+		"ghcr.io/akhildevelops/devcontainer-features/pip:0": {}
+	},
+	"postCreateCommand": "pip install -r requirements.txt"
+}

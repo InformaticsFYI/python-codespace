@@ -1,0 +1,4 @@
+pandas
+PyYAML
+simplejson
+streamlit
